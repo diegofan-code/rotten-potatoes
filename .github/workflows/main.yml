@@ -36,8 +36,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            diegofan/rotten-potatoes-diego:latest
-            diegofan/rotten-potatoes-diego:${{ github.run_number }}
+            diegofan/rotten-potatoes:latest
+            diegofan/rotten-potatoes:${{ github.run_number }}
             
         
 
