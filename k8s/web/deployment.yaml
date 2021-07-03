@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: movies
-        image: diegofan/rotten-potatoes-diego:v1
+        image: diegofan/rotten-potatoes-diego
         ports:
         - containerPort: 5000
         env:
