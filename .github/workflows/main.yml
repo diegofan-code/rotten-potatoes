@@ -36,8 +36,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            diegofan/rotten-potatoes:latest
-            diegofan/rotten-potatoes:${{ github.run_number }}
+            diegofan/rotten-potatoes-diego:latest
+            diegofan/rotten-potatoes-diego:${{ github.run_number }}
             
   CD:
     runs-on: ubuntu-latest
@@ -60,6 +60,6 @@ jobs:
         with:
           manifests: |
             k8s/web/deployment.yaml
-          images: diegofan/rotten-potatoes:${{ github.run_number }}  
+          images: diegofan/rotten-potatoes-diego:${{ github.run_number }}  
           
       
